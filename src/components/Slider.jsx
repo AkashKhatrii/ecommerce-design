@@ -88,19 +88,25 @@ function Slider() {
   };
   return (
     <Container>
+      {/* div */}
       <Arrow direction="left" onClick={() => handleClick("left")}>
+        {/* div */}
         <ArrowLeftOutlinedIcon />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
+        {/* div */}
         {sliderItems.map((item) => (
           <Slide bg={item.bg}>
+            {/* div */}
             <ImgContainer>
-              <Image src={item.img} />
+              {/* div */}
+              <Image src={item.img} /> {/* img */}
             </ImgContainer>
             <InfoContainer>
-              <Title>{item.title}</Title>
-              <Desc>{item.desc}</Desc>
-              <Button>SHOP NOW</Button>
+              {/* div */}
+              <Title>{item.title}</Title> {/* h1 */}
+              <Desc>{item.desc}</Desc> {/* p */}
+              <Button>SHOP NOW</Button> {/* button */}
             </InfoContainer>
           </Slide>
         ))}
